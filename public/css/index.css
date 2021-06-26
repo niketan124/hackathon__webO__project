@@ -1,0 +1,25 @@
+/* nav items position and styling -------------------------------------*/
+
+.navbar {
+  padding-bottom: 2.5rem;
+}
+
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat";
+}
+
+.topNav-div {
+  float: right;
+}
