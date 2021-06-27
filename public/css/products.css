@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* nav items position and styling -------------------------------------*/
+.navbar {
+  background: #111;
+  padding-bottom: 2.5rem;
+}
+
+.cart i {
+  color: #ff7675;
+  transition: 0.6s ease-in-out;
+  animation: movecart 1s linear 1;
+  animation-delay: 3s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+}
+
+.cart i:hover {
+  color: #ff4c68;
+  transform: scale(1.5);
+}
+
+@keyframes movecart {
+  0% {
+    transform: translateY(-100px);
+    visibility: visible;
+  }
+
+  100% {
+    transform: translateY(0px);
+    visibility: visible;
+    transform: scale(1.5);
+  }
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+  animation: movedown 1s linear 1;
+  animation-delay: 1s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+}
+
+@keyframes movedown {
+  0% {
+    transform: translateY(-100px);
+    visibility: visible;
+  }
+
+  100% {
+    transform: translateY(0px);
+    visibility: visible;
+  }
+}
+
+.links {
+  animation: movedown 1s linear 1;
+  animation-delay: 2s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat";
+}
+
+.container-fluid {
+  padding: 3% 15%;
+}
+
+.container-fluid a {
+  color: #111;
+  transition: 0.9s fade;
+  overflow: hidden;
+}
+
+/* .container-fluid .aHover:hover {
+  background-color: #81ecec;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  transition: 0.6s;
+} */
+/* ------------------------------------------top content styling */
+body {
+  background: #111;
+  padding-bottom: 300px;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "WoodHouse";
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16em;
+  font-weight: 700;
+  color: transparent;
+  -webkit-text-stroke: 1px #555;
+}
+
+#topContent {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#topContent h2 {
+  margin-left: 200px;
+  font-size: 4em;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+#topContent .container {
+  position: relative;
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#topContent:nth-child(even) .container {
+  flex-direction: row-reverse;
+}
+
+#topContent .container .imgBx {
+  position: relative;
+  width: 800px;
+  height: 400px;
+  overflow: hidden;
+  box-shadow: 0 25px 35px rgba(0, 0, 0, 0.1);
+}
+
+#topContent .container .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#topContent .container .content {
+  position: absolute;
+  right: 0;
+  margin-top: 200px;
+  margin-bottom: 40px;
+  padding: 40px;
+  background: #333;
+  z-index: 1;
+  max-width: 400px;
+  color: #fff;
+  box-shadow: 0 25px 35px rgba(0, 0, 0, 0.1);
+  border-bottom: 6px solid #4ac7ff;
+}
+
+#topContent:nth-child(even) .container .content {
+  left: 0;
+}
+
+.bed {
+  border-bottom: 2px solid #ffeaa7;
+  margin-bottom: 20px;
+}
+
+.sofa {
+  border-bottom: 2px solid #ffeaa7;
+  margin-bottom: 20px;
+}
+
+.dinning {
+  border-bottom: 2px solid #ffeaa7;
+  margin-bottom: 20px;
+}
+
+.divan {
+  border-bottom: 2px solid #ffeaa7;
+  margin-bottom: 20px;
+}

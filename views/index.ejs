@@ -15,32 +15,93 @@
   <!--- Google Fonts ----------->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900|Ubuntu:400,500,700" rel="stylesheet">
 
+  <!--- Font awsome ------------------>
+  <script src="https://kit.fontawesome.com/4f2a486a94.js" crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
   <section id="title">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky top-nav">
+    <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container-fluid">
-        <a class="navbar-brand navBrand" href="/">wood House</a>
+        <a class="navbar-brand" href="/">wood House</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse topNav-div" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 topNav-item">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 links">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active aHover" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/products">Products</a>
+              <a class="nav-link aHover" href="/products">Products</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/signUp">Sign-UP</a>
+              <a class="nav-link aHover" href="/signUp">Sign-UP</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link cart" href="#"><i class="fas fa-shopping-cart"></i></a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+  </section>
+  <!-- top section after div -->
+  <section id="topContent">
+    <div class="container-fluid top-container">
+      <div class="row wrap">
+        <div class="content container">
+          <div class="top-img col-lg-12 col-md-12 col-sm-12">
+            <img src="images/bk.jpg" alt="">
+          </div>
+          <div class="aboutWood">
+            <h1>Make Your House as Wood House!</h1>
+            <p>Our main priority is to make our users feel happy by using our product.</p>
+            <div class="btn">
+              <form action="signUp" method="post">
+                <button class="btn btn-outline-light btn-lg" type="submit" name="button"><i class="fas fa-user-plus"></i> SignUp now!</button>
+              </form>
+            </div>
+          </div>
+          <div class="wave col-lg-12 col-md-12 col-sm-12">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+              <path fill="#fff" fill-opacity="1"
+                d="M0,192L48,170.7C96,149,192,107,288,90.7C384,75,480,85,576,122.7C672,160,768,224,864,250.7C960,277,1056,267,1152,218.7C1248,171,1344,85,1392,42.7L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+              </path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="connectUs">
+    <div class="container platforms container-fluid">
+      <h1>Connect with us...</h1>
+      <div class="row icons">
+        <div class="icon facebook ic col-lg-4 col-md-6">
+          <div class="tooltip">Facebook</div>
+          <span><i class="fab fa-facebook-f"></i></span>
+        </div>
+        <div class="icon twitter ic col-lg-4 col-md-6">
+          <div class="tooltip">Twitter</div>
+          <span><i class="fab fa-twitter"></i></span>
+        </div>
+        <div class="icon instagram ic col-lg-4 col-md-6">
+          <div class="tooltip">Instagram</div>
+          <span><i class="fab fa-instagram"></i></span>
+        </div>
+        <div class="icon github ic col-lg-4 col-md-6">
+          <div class="tooltip">Github</div>
+          <span><i class="fab fa-github"></i></span>
+        </div>
+        <div class="icon youtube ic col-lg-4 col-md-6">
+          <div class="tooltip">Youtube</div>
+          <span><i class="fab fa-youtube"></i></span>
+        </div>
+      </div>
+      </div>
   </section>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>

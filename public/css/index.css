@@ -1,14 +1,62 @@
 /* nav items position and styling -------------------------------------*/
 
 .navbar {
+  background-image: linear-gradient(to right, #f6e58d, #f9ca24);
   padding-bottom: 2.5rem;
 }
 
+.cart i {
+  color: #ff7675;
+  transition: 0.6s ease-in-out;
+  animation: movecart 1s linear 1;
+  animation-delay: 3s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+}
+
+.cart i:hover {
+  color: #ff4c68;
+  transform: scale(1.5);
+}
+
+@keyframes movecart {
+  0%{
+    transform: translateY(-100px);
+    visibility: visible;
+  }
+  100%{
+    transform: translateY(0px);
+    visibility: visible;
+    transform: scale(1.5);
+  }
+}
 
 .navbar-brand {
   font-family: "Ubuntu";
   font-size: 2.5rem;
   font-weight: bold;
+  animation: movedown 1s linear 1;
+  animation-delay: 1s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+}
+
+@keyframes movedown {
+  0%{
+    transform: translateY(-100px);
+    visibility: visible;
+  }
+  100%{
+    transform: translateY(0px);
+    visibility: visible;
+  }
+}
+
+.links {
+  animation: movedown 1s linear 1;
+  animation-delay: 2s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
 }
 
 .nav-item {
@@ -20,6 +68,204 @@
   font-family: "Montserrat";
 }
 
-.topNav-div {
-  float: right;
+.container-fluid {
+  padding: 1% 15%;
+}
+
+.container-fluid a {
+  color: #111;
+  transition: 0.9s fade;
+  overflow: hidden;
+}
+
+/* .container-fluid .aHover:hover {
+  background-color: #81ecec;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  transition: 0.6s;
+} */
+
+/* ------------------------------------------top content styling */
+/* button styling */
+
+/* div background styling */
+/* .top-div {
+  background: rgba(0, 0, 0, 0.5), url(public/images/bk.jpg), no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  overflow: hidden;
+  background-blend-mode: overlay;
+} */
+
+.top-container {
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.content {
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+
+.aboutWood {
+  font-size: 1.5rem;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.content img {
+  /* background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)); */
+  background-position: center;
+  background-size: cover;
+  padding: 0;
+  height: 800px;
+  width: 100%;
+  overflow: hidden;
+  filter: brightness(50%);
+}
+
+.wave {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: -30px;
+  color: #fff;
+  opacity: 1;
+}
+
+/* styling social platforms */
+
+.icons {
+  margin-top: 50px;
+}
+
+.platforms {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+}
+
+.platforms h1 {
+  float: left;
+  font-size: 70px;
+}
+
+.ic {
+  place-items: center;
+  padding: 30px;
+  width: auto;
+}
+
+.ic:hover {
+  cursor: pointer;
+}
+
+.icon {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  margin: 0 20px;
+}
+
+.icon span {
+  position: relative;
+  height: 60px;
+  width: 60px;
+  display: block;
+  background: #fff;
+  text-align: center;
+  border-radius: 50%;
+  z-index: 2;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+}
+
+.icon span i {
+  font-size: 25px;
+  line-height: 60px;
+}
+
+.icon:hover span i {
+  color: #fff;
+}
+
+.icon .tooltip {
+  position: absolute;
+  top: 0;
+  color: #fff;
+  padding: 10px 18px;
+  background: #fff;
+  font-size: 20px;
+  border-radius: 25px;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+  opacity: 0;
+}
+
+.tooltip .p {
+  visibility: visible;
+  color: #111;
+}
+
+.icon:hover .tooltip {
+  top: -30px;
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.icon:hover span,
+.icon:hover .tooltip {
+  text-shadow: 0 -1px 0px rgba(0, 0, 0, 0.4);
+}
+
+
+.icon .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background: #fff;
+  bottom: -7px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.facebook:hover span,
+.facebook:hover .tooltip,
+.facebook:hover .tooltip::before {
+  background: #3B5999;
+}
+
+.twitter:hover span,
+.twitter:hover .tooltip,
+.twitter:hover .tooltip::before {
+  background: #00acee;
+}
+
+.instagram:hover span,
+.instagram:hover .tooltip,
+.instagram:hover .tooltip::before {
+  background: #e1306c;
+}
+
+.github:hover span,
+.github:hover .tooltip,
+.github:hover .tooltip::before {
+  background: #111;
+}
+
+.youtube:hover span,
+.youtube:hover .tooltip,
+.youtube:hover .tooltip::before {
+  background: #DE463B;
 }
