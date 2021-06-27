@@ -273,6 +273,7 @@
 }
 
 .footer-bottom {
+  margin-bottom: 0;
   color: #fff;
   padding: 70px 0;
   background: #eb4d4b;
