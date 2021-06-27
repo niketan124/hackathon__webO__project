@@ -154,6 +154,8 @@
 }
 
 .platforms h1 {
+  font-weight: 0;
+  color: #DE463B;
   float: left;
   font-size: 70px;
 }
@@ -268,4 +270,12 @@
 .youtube:hover .tooltip,
 .youtube:hover .tooltip::before {
   background: #DE463B;
+}
+
+.footer-bottom {
+  color: #fff;
+  padding: 70px 0;
+  background: #eb4d4b;
+  text-align: center;
+  justify-content: center;
 }
